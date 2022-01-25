@@ -1,6 +1,6 @@
 # StandardIOSum
 
-This is the repository for test kotlin with stdinIo
+This is the repository for test kotlin with standard IO
 
 ## original solution
 
