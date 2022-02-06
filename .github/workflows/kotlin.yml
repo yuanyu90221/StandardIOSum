@@ -23,8 +23,8 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-test-${{ hashFiles('**/*.gradle')}}
-          restore-keys: ${{ runner.os }}-gradle-test
+          key: ${{ runner.os }}-gradle-${{ github.event.repository.name }}-${{ hashFiles('**/*.gradle')}}
+          restore-keys: ${{ runner.os }}-gradle-${{ github.event.repository.name }}
       - name: Build with Gradlew
         run: ./gradlew build
       - name: Test with Gradlew
